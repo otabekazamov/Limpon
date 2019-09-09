@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    size: 16px;
+    font-size: 16px;
     line-height: 26px;
     color: #7581a1;
 }
@@ -19,6 +19,14 @@ h1 {
     margin-bottom: 64px;
 }
 
+.title-h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #192b59;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
 .btn-primary {
     color: #fff;
     font-size: 12px;
@@ -29,6 +37,7 @@ h1 {
     border: 1px solid#1085e4;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: 0.3s;
 }
 
 .btn-primary:hover {
@@ -45,6 +54,8 @@ h1 {
     border: 1px solid#cbdbe8;
     padding: 20px 40px;
     border-radius: 30px;
+    letter-spacing: 1.9px;
+    transition: 0.3s;
 }
 
 .btn-secondary:hover {
@@ -55,6 +66,7 @@ h1 {
     font-weight: 400;
     letter-spacing: 1.7px;
     padding: 21px 56px;
+    transition: 0.3s;
 }
 
 .title-50{
@@ -115,6 +127,7 @@ h1 {
     width: 183px;
     height: 49px;
     background-image: url(../img/logo.png);
+    background-position: center;
     padding-left: 0
 }
 
@@ -123,6 +136,7 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     list-style-type: none;
+    letter-spacing: 2.5px;
     margin: 0px;
     padding: 0px;
     display: flex
@@ -144,9 +158,11 @@ h1 {
     justify-content: space-between;
     max-width: 1110px;
     margin: 0 auto;
+    align-items: center;
 }
 .list-company-item{
     display: block;
+    background-position: center;
 }
 .sponsor-1{
     background-image: url(../img/sponsor-1.png);
@@ -172,6 +188,7 @@ h1 {
 .screen-img{
     display: block;
     background-image: url(../img/screen-header.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 902px;
@@ -190,6 +207,7 @@ h1 {
     border: 1px solid #dce1e5;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: 0.3s;
 }
 
 .btn-info:hover {
@@ -202,29 +220,133 @@ h1 {
 margin-left: 15px;
 }
 
+.grid{
+    display: grid;
+    grid-template-areas: "a b c"
+                         "d b c"
+                         "d f g"
+                         "e f g"
+                         "e h h";
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.grid-title{
+    grid-area: a;
+}
+
+.grid-item-1{
+    grid-area: b;
+}
+
+.grid-item-2{
+    grid-area: c;
+}
+
+.grid-item-3{
+    grid-area: d;
+}
+
+.grid-item-4{
+    grid-area: e;
+}
+
+.grid-item-5{
+    grid-area: f;
+}
+
+.grid-item-6{
+    grid-area: g;
+}
+
+.grid-text{
+    grid-area: h;
+}
+
 .grid h2 {
     font-size: 40px;
     font-weight: 700;
     color: #192b59;
+    max-width: 300px;
 }
 
 .grid h2 span {
     font-size: 14px;
     font-weight: 800;
     color: #1085e4;
+    letter-spacing: 3px;
     display: block;
 }
 
 .grid-item h3{
     font-size: 20px;
     font-weight: 600;
-    color: #192b59
+    color: #192b59;
+    margin-bottom: 18px;
 }
 
 .grid-item a {
-    size: 14px;
+    font-size: 14px;
     font-weight: 600;
     color: #1085e4
+}
+
+.grid-item{
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 29px 64px;
+    box-shadow: 0 9px 20px #f4f4f4;
+}
+.grid-icon{
+    background-repeat: no-repeat;
+    display: block;
+    height: 92px;
+    background-position: center;
+    margin: 0 auto 36px
+}
+
+.grid-icon-1{
+    background-image: url(../img/icon1.png);
+    background-size: 73px 79px;
+}
+
+.grid-icon-2{
+    background-image: url(../img/icon2.png);
+    background-size: 89px 85px;
+}
+
+.grid-icon-3{
+    background-image: url(../img/icon3.png);
+    background-size: 79px 82px;
+}
+
+.grid-icon-4{
+    background-image: url(../img/icon4.png);
+    background-size: 102px 92px;
+}
+
+.grid-icon-5{
+    background-image: url(../img/icon5.png);
+    background-size: 85px 90px;
+}
+            
+.grid-icon-6{
+    background-image: url(../img/icon6.png);
+    background-size: 100px 87px;
+}
+
+.grid-text-2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1085e4;
+}
+
+.grid-text-2 span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #192b59;
 }
 
 .box-subscribe{
@@ -249,9 +371,10 @@ margin-left: 15px;
 
 .box-subscribe-user .btn-primary{
     position: absolute;
-    right: 8px;
+    right: 10px;
     top: 9px;
-    padding: 17px 50px
+    padding: 17px 48px;
+    border-radius: 45px;
 }
 
 .box-subscribe-user input:focus, .box-subscribe-user .btn-primary{
@@ -289,7 +412,7 @@ flex-basis: 49%;
 
 .sub-header p {
     max-width: 410px;
-    size: 18px;
+    font-size: 18px;
     font-weight: 400;
     color: #dfe8ff;
     letter-spacing: 1px;
@@ -301,49 +424,231 @@ flex-basis: 49%;
     color: #fff;
     font-weight: 400;
     background-color: #1085e4; 
+    transition: 0.3s;
 }
+
 .robot-img{
     display: block;
     background-image: url(../img/robot.png.png);
+    background-position: center;
     flex-basis: 354px;
     height: 417px
 }
 
-.page-software h2 {
-size: 50px;
-font-weight: 600;
-color: #192b59
+.page-software-flex{
+    display: flex;
+    justify-content: flex-end;
+    
 }
 
-.dt {
-    font-weight: 800;
+.page-software-flex>div{
+    flex-basis: 55%
+}
+
+.setting-icon{
+    display: block;
+    background-image: url(../img/software-icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: -21px 0;
+    width: 114px;
+    height: 86px;
+}
+
+.page-software-list{
+    margin-top: 31px;
+    height: 340px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.page-software-list::-webkit-scrollbar { width: 4px; height: 4px;}
+.page-software-list::-webkit-scrollbar-button {  background-color: #1085e4; }
+.page-software-list::-webkit-scrollbar-track-piece { background-color: #ffffff;}
+.page-software-list::-webkit-scrollbar-thumb { height: 50px; background-color: #1085e4; border-radius: 10px;}
+
+
+.page-software-list dt{
+   
+    font-weight: 700;
+  
+    color: #5a6789;
+    margin-bottom: 10px;
+}
+
+.page-software-list dd{
+    margin-left: 0;
+    margin-bottom: 50px;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.page-software .title-h2{
+    max-width: 540px;
+    margin-top: 18px;
+    margin-bottom: 27px; 
+}
+.content-app .title-h2{
+    margin-bottom: 37px;
+}
+
+.page-app-text{
+font-size: 16px;
+font-weight: 700;
+text-transform: uppercase;
+color: #c4d2dd;
+margin-top: 28px;
+letter-spacing: 3px;
+}
+
+.page-app-list{
+    padding: 0;
+    list-style-type: none;
+    margin-left: -9px;
+}
+
+.page-app-list>li {
+    display: inline-block;
+}
+
+.page-app-list>li>a{
+    background-image: url(../img/apps.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 185px;
+    height: 78px;
+}
+
+.page-app-list>li>a.page-app-android{
+background-position: 0 0;
+}
+
+.page-app-list>li>a.page-app-ios{
+    background-position: -191px 0;
+}
+
+.content-app{
+width: 53%;
+}
+ 
+a.video-app {
+    position: absolute;
+    top: -63px;
+    right: -157px;
+}
+
+.flex-analytics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-analytics-text{
+    margin-bottom: 54px
+}
+
+.flex-analytics>div{
+    flex-basis: 53%;
+}
+
+.page-analytics2 .title-h2{
+    max-width: 435px;
+    margin: 16px 0 29px;
+}
+
+.page-analytics2-text{
+    margin-bottom: 54px;
+}
+
+.page-analytics2 .btn-primary{
+    padding: 20px 63px;
+}
+
+.box-clients{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 63px;
+}
+
+.box-clients-item {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    flex-basis: 31.5%;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 21px 42px;
+    box-shadow: 0 9px 20px #f4f4f4;
+}
+
+.box-clients-item>p{
+    margin-bottom: 4px:
+}
+
+.box-clients-item .name{
+    font-size: 22px;
+    font-weight: 600;
+    color: #000958;
+    margin-bottom: 0;
+    line-height: 1.1;
+    letter-spacing: -0.6px
+}
+
+.box-clients-item .possition{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1085e4;
+    margin-top: 0;
+    letter-spacing: 3px
+}
+.page-clients .title-40 {
+    color: #fff
+}
+
+.page-clients .title-40 span{
+    color: #85c8ff
+}
+
+.box-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box-info>div{
+    padding-left: 17px
 }
 
 .fact li {
-    size: 12px;
+    font-size: 12px;
     font-weight: 700;
     color: #1085e4
 }
+
 .fact span {
-    size: 60px;
+    font-size: 60px;
     font-weight: 700;
     color: #bacbdc;
     display: block;
 }
+
 .list-stat{
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     margin-top: 76px
 }
+
 .list-stat>li{
     font-size: 12px;
     font-weight: 700;
     color: #1085e4;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2.7;
+    letter-spacing: 2.7px;
 }
+
 .list-stat>li>span{
     display: block;
     font-size: 60px;
@@ -351,15 +656,18 @@ color: #192b59
     margin-bottom: 23px;
     letter-spacing: 0
 }
+
 .screen{
     margin-top: 70px;
     margin-bottom: -7px
 }
+
 .box-price{
     display: flex;
     justify-content: space-between;
     margin-top: 80px
 }
+
 .box-price ul{
     list-style-type: none;
     padding-left: 0;
@@ -367,15 +675,18 @@ color: #192b59
     margin-bottom: 59px;
     font-size: 14px;
 }
+
 .box-price ul>li{
     margin-bottom: 14px;
 }
+
 .box-price-items {
     background-color: #f5faff;
     flex-basis: 32%;
     position: relative;
     padding: 90px 0 96px 0;
 }
+
 .box-price-items-active {
     background-color: #192b59;
     color: #fff;
@@ -383,6 +694,7 @@ color: #192b59
     position: relative;
     padding: 90px 0 96px 0;
 }
+
 .box-price-items-active h3{
     font-size: 70px;
     font-weight: 700;
@@ -390,19 +702,23 @@ color: #192b59
     margin-top: 0;
     margin-bottom: 15px
 }
+
 .box-price-items-active p{
     font-size: 14px;
     font-weight: 700;
     color: #0084ff;
     text-transform: uppercase;
-    }
+}
+
 .box-price-items-active span{
     font-size: 20px;
     color: #7b8ab2
 }
+
 .box-price-items:first-child h3{
     margin-bottom: 35px;
 }
+
 .box-price-items h3{
 font-size: 70px;
 font-weight: 700;
@@ -411,12 +727,14 @@ letter-spacing: -1px;
 margin-top: 0;
 margin-bottom: 15px
 }
+
 .box-price-items p{
 font-size: 14px;
 color: #0084ff;
 font-weight: 700;
 text-transform: uppercase;
 }
+
 .box-price-items span{
     font-size: 20px;
     color: #7b8ab2
@@ -426,6 +744,7 @@ text-transform: uppercase;
 
 .page-header{
     background-image: url(../img/header-bg.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 53px 0 330px 0;
@@ -433,6 +752,7 @@ text-transform: uppercase;
 }
 .page-company{
     background-image: url(../img/company-bg.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 111px 0 94px;
@@ -441,15 +761,31 @@ text-transform: uppercase;
     background-color: #dce1e5;
     text-align: center
 }
+
+.page-software{
+    padding: 109px 0 156px 0;
+    background-image: url(../img/software-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
 .page-stat{
     padding: 116px 0 96px
 }
 .page-plan{
-    text-align 0
+    text-align: center;
 }
 .page-screen{
-    padding: 83px 0 0;: center
+    padding: 83px 0 0;
+    text-align: center;
 }
+
+.page-grid{
+    padding: 78px;
+}
+
 .page-subscribe{
     background: rgba(10,32,144,1);
     background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
@@ -462,5 +798,46 @@ text-transform: uppercase;
     padding: 50px 0 45px;
 }
 
+.page-app{
+    padding: 72px 0 61px 0;
+}
+.page-app .wrap{
+    position: relative;
+}
+.page-analytics{
+    padding: 116px 0 138px;
+    background-image: url(../img/analytics-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-analytics2{
+    padding: 116px 0 138px;
+    background-image: url(../img/analytics2-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-clients {
+    position: relative;
+    margin-top: 120px;
+    padding: 43px 0 0 0;
+}
+
+.page-clients::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/vector.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    
+}
 
  
